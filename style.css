@@ -1,0 +1,18 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+  }
+  h1 {
+    color: #333;
+  }
+  #filter {
+    margin-bottom: 20px;
+  }
+  #members {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  

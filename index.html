@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script
+    type="module"
+    src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"
+></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clan Member Finder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #members {
+      margin-top: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #f4f4f4;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Clan Member Finder</h1>
+  <div>
+    <label for="rank">Select Rank:</label>
+    <select id="rank">
+      <option value="all">All</option>
+      <option value="owner">Owner</option>
+      <option value="colonel">Co Owner</option>
+      <option value="law">Human Resources</option>
+      <option value="astral">Royal Clerk</option>
+      <option value="major">Head High Mod</option>
+      <option value="captain">High Moderator</option>
+      <option value="proselyte">Head Mod</option>
+      <option value="lieutenant">Moderator</option>
+      <option value="minion">Head Recruiter</option>
+      <option value="dogsbody">Recruiter</option>
+      <option value="spellcaster">MOTM</option>
+      <option value="imp">BOTW Winner</option>
+      <option value="skiller">SOTW Winner</option>
+      <option value="maxed">Max Cape</option>
+      <option value="zamorakian">CA Master</option>
+      <option value="tzkal">Infernal Cape</option>
+      <option value="achiever">Achiever</option>
+      <option value="tztok">Fire Cape</option>
+      <option value="zenyte">2200 Total</option>
+      <option value="onyx">2000 Total</option>
+      <option value="dragonstone">1750 Total</option>
+      <option value="diamond">1500 Total</option>
+      <option value="carry">Alt Account</option>
+      <option value="brassican">Cabbage</option>
+    </select>
+    <button id="fetch">Fetch Members</button>
+  </div>
+  <div id="members">
+    <h2>Members</h2>
+    <ul id="member-list"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
