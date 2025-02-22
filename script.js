@@ -25,6 +25,7 @@ const rankImages = {
   "dragonstone": "images/dragonstone.webp",
   "diamond": "images/diamond.webp",
   "carry": "images/carry.webp",
+  "proselyte": "images/proselyte.webp",
   "brassican": "images/brassican.webp",
 };
 
