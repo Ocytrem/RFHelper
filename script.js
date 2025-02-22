@@ -27,6 +27,7 @@ const rankImages = {
   "carry": "images/carry.webp",
   "proselyte": "images/proselyte.webp",
   "brassican": "images/brassican.webp",
+  "lieutenant": "images/lieutenant.webp",
 };
 
 document.getElementById('fetch').addEventListener('click', async () => {
