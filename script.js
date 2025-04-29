@@ -1,8 +1,23 @@
-// Set your group ID here
+// 🌗 Dark Mode Toggle Setup
+const toggleTheme = document.getElementById('toggle-theme');
+const body = document.body;
+
+// Load saved theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+  body.classList.add('light-mode');
+}
+
+toggleTheme.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+  const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+  localStorage.setItem('theme', currentTheme);
+});
+
+// 🔁 Existing logic from original script.js
 const GROUP_ID = 9979; // Replace with your group's ID from Wise Old Man
 const API_URL = `https://api.wiseoldman.net/v2/groups/${GROUP_ID}`;
 
-// Rank to image mapping
 const rankImages = {
   "owner": "images/owner.webp",
   "colonel": "images/colonel.webp",
@@ -25,9 +40,7 @@ const rankImages = {
   "dragonstone": "images/dragonstone.webp",
   "diamond": "images/diamond.webp",
   "carry": "images/carry.webp",
-  "proselyte": "images/proselyte.webp",
-  "brassican": "images/brassican.webp",
-  "lieutenant": "images/lieutenant.webp",
+  "brassican": "images/brassican.webp"
 };
 
 document.getElementById('fetch').addEventListener('click', async () => {
