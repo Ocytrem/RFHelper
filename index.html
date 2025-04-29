@@ -1,36 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script
-    type="module"
-    src="https://cdn.jsdelivr.net/npm/@bufferhead/nightowl@0.0.14/dist/nightowl.js"
-></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clan Member Finder</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    #members {
-      margin-top: 20px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      background: #f4f4f4;
-      margin: 5px 0;
-      padding: 10px;
-      border-radius: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <button id="toggle-theme" title="Toggle Theme">🌓</button>
+
   <h1>Clan Member Finder</h1>
-  <div>
+
+  <div id="filter">
     <label for="rank">Select Rank:</label>
     <select id="rank">
       <option value="all">All</option>
@@ -61,10 +42,12 @@
     </select>
     <button id="fetch">Fetch Members</button>
   </div>
+
   <div id="members">
     <h2>Members</h2>
     <ul id="member-list"></ul>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
