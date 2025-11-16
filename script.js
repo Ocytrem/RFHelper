@@ -132,8 +132,8 @@ document.getElementById('fetch').addEventListener('click', async () => {
           warningMessage = `<br><b style="color: red;">Warning: Exceeds 1750 total level for Diamond rank!</b>`;
         } else if (rank === "dragonstone" && totalLevel > 2000) {
           warningMessage = `<br><b style="color: red;">Warning: Exceeds 2000 total level for Dragonstone rank!</b>`;
-        } else if (rank === "onyx" && totalLevel > 2200) {
-          warningMessage = `<br><b style="color: red;">Warning: Exceeds 2200 total level for Onyx rank!</b>`;
+        } else if (rank === "onyx" && totalLevel > 2250) {
+          warningMessage = `<br><b style="color: red;">Warning: Exceeds 2250 total level for Onyx rank!</b>`;
         }
       }
 
@@ -170,3 +170,4 @@ document.getElementById('fetch').addEventListener('click', async () => {
     console.error("Fetch Error:", error);
   }
 });
+
