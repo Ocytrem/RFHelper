@@ -25,8 +25,11 @@ const rankImages = {
   "astral": "images/astral.webp",
   "major": "images/major.webp",
   "captain": "images/captain.webp",
+  "death": "images/death.webp",
+  "lieutenant": "images/lieutenant.webp",
   "minion": "images/minion.webp",
-  "dogsbody": "images/dogsbody.webp",
+  "dogsbody": "images/dogsbody.webp"
+  "infantry": "images/infantry.webp"
   "spellcaster": "images/spellcaster.webp",
   "imp": "images/imp.webp",
   "skiller": "images/skiller.webp",
@@ -170,5 +173,6 @@ document.getElementById('fetch').addEventListener('click', async () => {
     console.error("Fetch Error:", error);
   }
 });
+
 
 
