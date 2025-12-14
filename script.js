@@ -28,8 +28,8 @@ const rankImages = {
   "death": "images/death.webp",
   "lieutenant": "images/lieutenant.webp",
   "minion": "images/minion.webp",
-  "dogsbody": "images/dogsbody.webp"
-  "infantry": "images/infantry.webp"
+  "dogsbody": "images/dogsbody.webp",
+  "infantry": "images/infantry.webp",
   "spellcaster": "images/spellcaster.webp",
   "imp": "images/imp.webp",
   "skiller": "images/skiller.webp",
@@ -45,6 +45,7 @@ const rankImages = {
   "carry": "images/carry.webp",
   "brassican": "images/brassican.webp"
 };
+
 
 document.getElementById('fetch').addEventListener('click', async () => {
   const selectedRank = document.getElementById('rank').value;
@@ -173,6 +174,7 @@ document.getElementById('fetch').addEventListener('click', async () => {
     console.error("Fetch Error:", error);
   }
 });
+
 
 
 
