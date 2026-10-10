@@ -26,6 +26,7 @@ const rankImages = {
   "major": "images/major.webp",
   "captain": "images/captain.webp",
   "death": "images/death.webp",
+  "prodigy": "images/Prodigy.webp",
   "lieutenant": "images/lieutenant.webp",
   "minion": "images/minion.webp",
   "dogsbody": "images/dogsbody.webp",
